@@ -13,10 +13,10 @@ app.get("/user/:userId", controllers.getUserById)
 app.post("/register", controllers.register)
 app.post("/login", controllers.login)
 
-const PORT = 4000;
+const port = process.env.PORT || 4000;
 
-app.listen(PORT, () => {
-  console.log(`SERVER FUNCIONANDO EN EL PUERTO ${PORT}`);
+app.listen(port, () => {
+  console.log(`SERVER FUNCIONANDO EN EL PUERTO ${port}`);
   db();
 });
 

@@ -1,9 +1,10 @@
 const mongoose = require('mongoose')
+import "dotenv/config"
 
-const MONGO_URL = "mongodb://localhost/autenticacionLocal"
+// const MONGO_URL = "mongodb://localhost/autenticacionLocal"
 
 const db = async () => {
-   await mongoose.connect(MONGO_URL, {
+   await mongoose.connect(process.env.MONGO_URL, {
       useUnifiedTopology: true,
       useNewUrlParser: true
    })
