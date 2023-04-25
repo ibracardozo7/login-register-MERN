@@ -2,7 +2,7 @@
   background-color: white;
   border-radius: 8px;
   min-width: 300px;
-  width: 60%;
+  width: 100%;
   max-width: 600px;
   padding: 40px;
   display: flex;
@@ -141,5 +141,11 @@
     button:hover {
       background-color: #4235d6;
     }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .formContainer {
+    width: 60%;
   }
 }
