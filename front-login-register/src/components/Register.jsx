@@ -48,7 +48,7 @@ const Register = () => {
         })
         .catch((error) => {
           console.error(error);
-          setMensaje("Hubo un error")
+          setMensaje("Hubo un error con la coneccion a la base de datos")
           setTimeout(() => {
             setMensaje("")
             setLoading(false)
